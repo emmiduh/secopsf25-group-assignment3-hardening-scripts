@@ -22,7 +22,15 @@ The enhanced modules extend the existing security baseline to address attack vec
 ```bash
 git clone https://github.com/emmiduh/secopsf25-group-assignment3-hardening-scripts.git
 cd <your-repo-name>
+```
+
+### 2. Make all scripts executable
+```bash
 sudo chmod +x modules/*.sh
+```
+
+### 3. Run the enhanced modules
+```bash
 sudo ./modules/enforce_ssh_key_only.sh
 sudo ./modules/restrict_ssh_to_admin_subnet.sh
 sudo ./modules/block_ioc_ips.sh
