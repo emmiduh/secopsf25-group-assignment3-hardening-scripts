@@ -38,3 +38,14 @@ sudo ./modules/nginx_hardening.sh
 sudo ./modules/fail2ban_matrix_login.sh
 sudo ./modules/install_psad.sh
 ```
+
+### 4. Enhanced Modules Summary
+| Script Name                       | Purpose                                                                          |
+| --------------------------------- | -------------------------------------------------------------------------------- |
+| `enforce_ssh_key_only.sh`         | Enforce SSH key-only authentication to mitigate credential stuffing              |
+| `restrict_ssh_to_admin_subnet.sh` | Restrict SSH access to trusted admin networks                                    |
+| `block_ioc_ips.sh`                | Block attacker IPs identified during investigation                               |
+| `nginx_hardening.sh`              | Rate limiting, block .map files, disable directory listing, add security headers |
+| `fail2ban_matrix_login.sh`        | Add Fail2Ban protection for Matrix login API brute-force                         |
+| `install_psad.sh`                 | Install PSAD for port-scan detection                                             |
+
